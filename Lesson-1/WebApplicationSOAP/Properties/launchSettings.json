@@ -1,0 +1,15 @@
+﻿{
+  "profiles": {
+    "WebApplicationSOAP": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5085",
+      "launchUrl": "Services.asmx",
+
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
