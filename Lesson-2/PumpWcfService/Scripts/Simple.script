@@ -1,0 +1,13 @@
+namespace Simple
+{
+	public class SampleScript
+	{
+		public static bool EntryPoint()
+		{
+			System.Random random = new System.Random();
+			int number = random.Next(0, 2);
+
+			return number == 0;
+		}
+	}
+}
