@@ -1,0 +1,40 @@
+[
+    {
+      "id": "ewbgrepong30g30gn34ioo34nono",
+      "title": "test_1",
+      "category": "test_category",
+      "lang": "test_leng",
+      "pages": 100,
+      "ageLimit": 10,
+      "publicationDate": 2000,
+      "authors": [
+        {
+          "name": "Tes_Author_Name_1",
+          "lang": "test_lang_1"
+        },
+        {
+          "name": "Test_Author_Name_2",
+          "lang": "test_lang_2"
+        }
+      ]
+    },
+    {
+      "id": "ewbgrepong60g60gn64ioo64nono",
+      "title": "test_2",
+      "category": "test_category",
+      "lang": "test_leng",
+      "pages": 100,
+      "ageLimit": 10,
+      "publicationDate": 3000,
+      "authors": [
+        {
+          "name": "Tes_Author_Name_1",
+          "lang": "test_lang_1"
+        },
+        {
+          "name": "Test_Author_Name_2",
+          "lang": "test_lang_2"
+        }
+      ]
+    }
+]
