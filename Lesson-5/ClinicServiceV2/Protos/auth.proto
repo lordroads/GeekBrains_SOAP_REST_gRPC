@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+option csharp_namespace = "ClinicServiceNamespace";
+
+import "google/protobuf/wrappers.proto";
+import "google/api/annotations.proto";
+
+package proto;
+
+//Сервис клиники авторизации
+service AuthenticateService {
+	//Логирование
+	rpc Login (AuthenticationRequest) returns (AuthenticationResponse){
+		option (google.api.http) = {
+			get: "/api/login"
+		};
+	}
+	//Получение сессии
+	rpc GetSession (GetSessionRequest) returns (GetSessionResponse){
+		option (google.api.http) = {
+			get: "/api/getSesion"
+		};
+	}
+}
+
+message GetSessionRequest{
+
+}
+
+message GetSessionResponse{
+	SessionContext sessionContext = 1;
+}
+
+message AuthenticationRequest{
+	string userName = 1;
+	string password = 2;
+}
+
+message AuthenticationResponse{
+	int32 status = 1;
+	SessionContext sessionContext = 2;
+}
+
+message SessionContext{
+	int32 sessionId = 1;
+	string sessionToken = 2;
+	AccountDto account = 3;
+}
+
+message AccountDto{
+	int32 accountId = 1;
+	string eMail = 2;
+	bool locked = 3;
+	string firstName = 4;
+	string lastName = 5;
+	string secondName = 6;
+}
